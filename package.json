@@ -1,0 +1,32 @@
+{
+  "name": "torc-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Paulo Citron <paulocitron99@gmail.com>",
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write \"{src,apps,libs,tests}/**/*.{ts,js}\"",
+    "lint": "eslint \"{src,apps,libs,tests}/**/*.{ts,js}\" --fix",
+    "allure:clear": "rm -r allure-results allure-report || true",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report",
+    "allure:open": "allure open allure-report",
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^3.1.4",
+    "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.35.2",
+    "@types/node": "^18.13.0",
+    "allure-commandline": "^2.21.0",
+    "cypress": "^12.17.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.4"
+  }
+}

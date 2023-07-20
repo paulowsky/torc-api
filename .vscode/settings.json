@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.probe": ["javascript"],
+  "cSpell.customDictionaries": {
+    "project-words": {
+      "addWords": true,
+      "path": "./.vscode/project-words.txt"
+    }
+  }
+}
